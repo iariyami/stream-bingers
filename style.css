@@ -1,3 +1,9 @@
+/* body font style and size */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+}
 .field {
   width: 250px;
 }
@@ -18,4 +24,7 @@ hr {
   margin-left: 30px;
   margin-right: 30px;
   background-color: lightgray;
+}
+.content {
+  padding: 20px;
 }
