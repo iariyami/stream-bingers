@@ -31,8 +31,8 @@ $(document).ready(function () {
       method: "GET"
     }).then(function (responseOMDB) {
 
-      let searchActor = responseOMDB.Actors;
       // comma deliminate array to search for lead actor
+      let searchActor = responseOMDB.Actors;
       let actingIn = searchActor.split(',');
       let actorIndex = actingIn.indexOf(actor);
       leadActor = actingIn[actorIndex];
