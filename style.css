@@ -1,8 +1,12 @@
 /* body font style and size */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 1;
+  background-image: url(/Users/ibu/CodingBootcamp/stream-bingers/images/streamBingersEntertainment.jpg);
+  background-size: cover;
+  opacity: 0.8;
+  height: 100vh;
 }
 .field {
   width: 250px;
@@ -25,6 +29,7 @@ hr {
   margin-right: 30px;
   background-color: lightgray;
 }
+
 .content {
   padding: 20px;
 }
