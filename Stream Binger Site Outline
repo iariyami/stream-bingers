@@ -1,1 +1,34 @@
-
+Home
+    About Us/Site Overview
+        Programers(Picture)
+        Reason for the site and its functionality
+    
+    User Input
+        Text Input Movie or Series
+        Text Input Actor
+        Buton Click for Seatrch (All)
+        Validate Input
+            User mst input minimum search critirea (i.e actor name, series title, movie title)
+        
+        Output
+            Year of release
+            Cast
+            Short Plot
+            Rating(System) PG.etc
+            Poster
+           
+            Streaming Provider
+                Amazon Prime
+                Netflix
+                Hulu
+                iTunes
+                Google Play
+                
+            Offer Types by Subscription etc.retal
+                Rental
+                By Subscription 
+                By Purchace
+            
+            Status (returning series or in production)
+                Returning Series
+                In Production (Release Date)
