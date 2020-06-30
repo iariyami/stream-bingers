@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bulma cdn minified for css integration in view -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
+  <!-- unique style sheet for project styling -->
   <link rel="stylesheet" href="style.css">
   <title>Stream Bingers</title>
 </head>
 
 <body>
+  <!-- Bulma nav bar container and menu -->
   <nav class="navbar is-dark">
     <div class="container">
       <div class="navbar-brand">
@@ -31,36 +34,44 @@
       </div>
     </div>
   </nav>
+
   <br>
+
+  <!-- container to accept user input for movie or show content and submit button -->
   <div class="container">
     <div class="field">
       <label class="label">Movie</label>
       <input class="input titles" type="text" placeholder="Search Movie" />
     </div>
-
-
     <div class="field">
       <label class="label">Actor/Actress</label>
       <input class="input actors" type="text" placeholder="Search Actor/Actress" />
     </div>
   </div>
+
   <br>
+
+  <!-- submit button for user after input of search criteria -->
   <div class="field is-grouped">
     <div class="control">
       <button class="button is-link">Submit</button>
     </div>
   </div>
-  <hr>
-  <article class="media">
-    <figure class="media-left">
 
+  <hr>
+  <!-- Bulma media object to display content search -->
+  <article class="media">
+
+    <!-- image of media content poster dynamically appended -->
+    <figure class="media-left">
     </figure>
+
+    <!-- content section of media object to dynamically append api fetch -->
     <div class="media-content">
       <div class="content">
-
       </div>
-
     </div>
+    <!-- delete button of content for another search -->
     <div class="media-right">
       <button class="delete"></button>
     </div>
