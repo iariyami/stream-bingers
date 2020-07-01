@@ -23,7 +23,7 @@
 
 - The application used documentation and ajax calls in jQuery to retrieve the API's in order to display the consumed results on the web application
 - The following image demonstrates the application functionality:
-  _insert screenshot here_
+  ![](images/streamBingersScreen.png)
 
 # Purpose
 
