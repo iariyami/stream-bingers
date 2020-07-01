@@ -19,7 +19,12 @@ body {
 .button {
   margin-left: 50px;
 }
-
+#clrText :before {
+  width: 84px;
+ }
+ #clrText :after {
+  width: auto;
+ }
 hr {
   border-top: 2px solid black;
 }
