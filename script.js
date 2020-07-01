@@ -1,6 +1,9 @@
 $(document).ready(function () {
   // clear media object for a clean UI
   $(".media").hide();
+  $(".modal").hide();
+  $(".titles").attr("disabled", false);
+  $(".actors").attr("disabled", false);
 
   // array of providers included in search 
   let provider = [
@@ -34,14 +37,14 @@ $(document).ready(function () {
       // comma deliminate array to search for lead actor
       let searchActor = responseOMDB.Actors;
       let actingIn = searchActor.split(',');
-      let actorIndex = actingIn.indexOf(actor);
-      leadActor = actingIn[actorIndex];
+      leadActor = actingIn[0];
+      console.log("lead", leadActor);
 
 
       // fetch api data and convert to variables
       Title = responseOMDB.Title;
       getYear = responseOMDB.Year;
-      pCast = responseOMDB.Actors;
+      pCast = searchActor;
       pPlot = responseOMDB.Plot;
       pRated = responseOMDB.Rated;
       criticsRatingS = responseOMDB.Ratings[1].Source;
@@ -97,13 +100,12 @@ $(document).ready(function () {
           "&ProgramTypes=Show&ProgramTypes=Movie&Providers=" +
           provider[i],
         method: "GET",
-        // error: checkContent(),
         headers: {
           "x-rapidapi-host":
             "ivaee-internet-video-archive-entertainment-v1.p.rapidapi.com",
           "x-rapidapi-key": "acd626c871msh56e79dd581cd845p1e0ed3jsndbc38000616c",
           "content-type": "application/json",
-        },
+        }
       };
       let service = provider[i];
       $.ajax(settings).done(function (response) {
@@ -152,23 +154,31 @@ $(document).ready(function () {
     // This line consumes the input from the textbox value
 
     let title = $(".titles").val().trim();
-    let actor = $(".actors").val().trim();
-    Title = title;
 
+    let actor = $(".actors").val().trim();
+    // user must input at least a title
+    if (title === "") {
+      $("#clrText").text("Input a title please (clear)");
+    }
+    Title = title;
     // call the OMDB api with title and actor arguments
     searchOMDB(Title, actor);
+    $(".titles").attr("disabled", true);
+    $(".titles").val("");
+    $(".actors").attr("disabled", true);
+    $(".actors").val("");
+
 
   })
 
   //  this is the media object clear button event handler and clears text input as well
-  $(".delete").on("click", function (event) {
+  $(".clBtn").on("click", function (event) {
     event.preventDefault();
 
-    $(".media").empty();
+    // $(".media").empty();
     $(".titles").val("");
     $(".actors").val("");
-
-
+    location.reload(true);
   })
 
 });
