@@ -13,7 +13,8 @@
 # Mock up of Project
 - Video of project testing:
 
-<iframe src="https://drive.google.com/file/d/1w354fHXGZK7mEYS7kI6wLtfe1cICg484/preview" width="640" height="480"></iframe>
+''' https://drive.google.com/file/d/1w354fHXGZK7mEYS7kI6wLtfe1cICg484/view
+
 
 - The application used documentation and ajax calls in jQuery to retrieve the API's in order to display the consumed results on the web application
 - The following image demonstrates the application functionality:
@@ -22,7 +23,10 @@
 # Purpose
 * Link to shared google drive powerpoint:
 
-''' https://docs.google.com/presentation/d/1_-OHYOXMANT0yQhBC2oWkKpMUWf2LzJixGMA7Fuki2g/edit?usp=sharing '''
+'''
+ https://docs.google.com/presentation/d/1_-OHYOXMANT0yQhBC2oWkKpMUWf2LzJixGMA7Fuki2g/edit?usp=sharing 
+ 
+ '''
 
 - The purpose of Stream Bingers is to eliminate the hassle of trying to find which streaming provider a specific series or movie is located on. By doing this, we hope to provide the users with a pleasant and interactive UI.
 
