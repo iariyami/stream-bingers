@@ -10,7 +10,7 @@ body {
   background-image: url(./images/streamBingersEntertainment.jpg);
   background-size: cover;
   opacity: 0.8;
-  height: 100vh;
+  height: 150vh;
 }
 
 /* input styling  */
@@ -29,10 +29,10 @@ body {
 
 #clrText :before {
   width: 84;
- }
- #clrText :after {
+}
+#clrText :after {
   width: auto;
- }
+}
 
 /* hr break styling */
 hr {
@@ -54,7 +54,36 @@ hr {
 
 /* ensures the first letter of each word in a title is capitalized */
 
-.capitalise
-{
-    text-transform:capitalize;
+.capitalise {
+  text-transform: capitalize;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  color: mintcream;
+}
+
+h2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: mintcream;
+}
+
+.grabbedpics {
+  margin-left: 650px;
+  height: 100px;
+  width: 500px;
+}
+
+.contname {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: mintcream;
+  font-weight: bold;
+  font-size: 20px;
 }
