@@ -27,7 +27,7 @@
 
 # Purpose
 
-- Link to shared google drive powerpoint:
+- Link to google drive powerpoint:
 
 '''
 https://docs.google.com/presentation/d/1_-OHYOXMANT0yQhBC2oWkKpMUWf2LzJixGMA7Fuki2g/edit?usp=sharing

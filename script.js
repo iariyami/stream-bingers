@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-  // clear media object for a clean UI
+  // clear media object for clean UI
   $(".media").hide();
   $(".modal").hide();
   $(".titles").attr("disabled", false);
